@@ -1,3 +1,4 @@
 project_venv/*
 logs/*
 test_project/.user.yml
+data/test_db.db

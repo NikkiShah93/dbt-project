@@ -16,7 +16,7 @@ with open('scripts/sql_statements/create_main_table.sql') as s:
     for line in s.readlines():
         q2+=line
 
-with duckdb.connect('data/test_db.db') as con:
+with duckdb.connect('data/test_project.db') as con:
     con.sql(q1)
     con.sql(q2)
     print(con.sql(sql_query).df())
