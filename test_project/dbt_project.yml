@@ -33,4 +33,15 @@ models:
   test_project:
     # Config indicated by + and applies to all files under models/example/
     example:
+      +materialized: ephemeral
+    bronze:
       +materialized: view
+    silver:
+      silver_lookup_table:
+        +materialized: ephemeral
+      silver_main_table:
+        +materialized: ephemeral
+      silver_full_data: 
+        +materialized: view
+    gold:
+      +materialized: table
