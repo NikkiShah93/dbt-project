@@ -1,0 +1,6 @@
+dbt_example:
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/test_project.db'
+  target: dev
