@@ -1,0 +1,10 @@
+models:
+  - name: example_table
+    description: Some description for this table
+    columns:
+      - name: example_column
+        description: '{{ doc("example_column") }}'
+      - name: example_column2
+        description: '{{ doc("example_column2") }}'
+      - name: example_column3
+        description: '{{ doc("example_column3") }}'
